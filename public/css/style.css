@@ -57,3 +57,9 @@ h1 {
 	/* margin-top: 15px; */
 	border: none;
 }
+
+.spacer{
+	content: " ";
+	display: block;
+	padding-top: 20px;
+}
