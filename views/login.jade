@@ -1,11 +1,16 @@
 extends layout
 block content
-	h1(align='center') LOGIN 
-	form.containers
-		| Enter Username
-		input(type='text', placeholder='Enter Username')
-		br
-		| Enter Password	
-		input(type='text', placeholder='Enter Username')
-	.spacer
-	| Don't have an account yet ? Register Here !
+	.mainContainer
+		h1(align='center') LOGIN 
+		form.loginContainer
+			| Enter Username
+			input(type='text', placeholder='Enter Username')
+			br
+			| Enter Password	
+			input(type='text', placeholder='Enter Username')
+			br
+			input.login-btn(type='submit', value='Login')
+			p.lowerPartOfLogin
+				| Don't have an account yet ? Register 
+				a(href='/reg')
+					|Here !

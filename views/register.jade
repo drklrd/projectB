@@ -1,0 +1,15 @@
+extends layout
+block content
+      .mainContainer
+          form.registrationContainer(method='post', action='/register')
+            | Name 
+            input(type='text', placeholder='Enter Name', name='name', autofocus)
+            p
+            | Phone 
+            input(type='text', placeholder='Enter Phone',name='phone')
+            p
+            | Password
+            
+            input(type='password',placeholder='Enter Password',name='password')
+            p
+            input.register-btn(type='submit', value='Register')
